@@ -355,3 +355,100 @@ body {
     resize: none;
 }
 /* END FORM  */
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 20px 50px;
+    }
+
+    .headerLinks {
+        width: 60%;
+    }
+
+    .landingPage {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .searchBar input {
+        width: 80%;
+    }
+
+    .searchBar .searchBtn {
+        position: static;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .trendingCard, .mostCards, .categoryCards {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    .headerLinks {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .headerLinks a {
+        display: block;
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .landingPage .slogan {
+        font-size: 35px;
+    }
+
+    .imageContainer img {
+        width: 80%;
+    }
+
+    .formContainer {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .formContainer form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .landingPage .slogan {
+        font-size: 28px;
+    }
+
+    .searchBar input {
+        width: 100%;
+        font-size: medium;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .categoryCards {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        font-size: medium;
+    }
+}
